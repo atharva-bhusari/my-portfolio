@@ -22,14 +22,14 @@ const Home = () => (
         </p>
         <div className="social-links">
           <a
-            href="https://www.linkedin.com/in/yourprofile"
+            href="https://www.linkedin.com/in/atharva-bhusari/"
             target="_blank"
             rel="noopener noreferrer"
           >
             <FaLinkedin />
           </a>
           <a
-            href="https://github.com/yourusername"
+            href="https://github.com/atharva-bhusari"
             target="_blank"
             rel="noopener noreferrer"
           >
