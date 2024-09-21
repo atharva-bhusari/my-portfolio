@@ -1,6 +1,6 @@
 import Layout from '../components/Layout';
 import Image from 'next/image';
-import profilePic from '../public/my-photo.jpg';
+// import profilePic from '../public/my-photo.jpg';
 import { FaLinkedin, FaGithub } from 'react-icons/fa';
 
 const Home = () => (
@@ -15,9 +15,9 @@ const Home = () => (
           unoptimized
           className="profile-photo"
         />
-        <h1>Hi, I'm Atharva Harshavardhan Bhusari</h1>
+        <h1>Hi, I&apos;m Atharva Harshavardhan Bhusari</h1>
         <p>
-          I'm a Data Scientist specializing in machine learning and data analysis.
+          I&apos;m a Data Scientist specializing in machine learning and data analysis.
           I have a passion for turning data into actionable insights and developing
           predictive models that drive business value.
         </p>
