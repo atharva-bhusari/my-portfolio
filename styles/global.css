@@ -47,6 +47,9 @@ body {
   section {
     max-width: 800px;
     margin: auto;
+  }
+
+  section:not(.no-box) {
     background-color: #fff;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -71,3 +74,51 @@ body {
   a:hover {
     text-decoration: underline;
   }
+
+  .home-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .profile-container {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .profile-photo {
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .social-links {
+    margin-top: 20px;
+  }
+  
+  .social-links a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #0066cc;
+  }
+  
+  .social-links a:hover {
+    text-decoration: underline;
+  }
+
+  @media (max-width: 600px) {
+    .profile-photo {
+      width: 150px;
+      height: 150px;
+    }
+  }
+
+  .social-links a {
+    margin: 0 10px;
+    color: #0066cc;
+  }
+  
+  .social-links a:hover {
+    color: #004999;
+  }
+  
