@@ -13,10 +13,10 @@ const Education = () => {
 
   return (
     <Layout title="Education">
-      <section>
+      <section className="content-section">
         <h1>Education</h1>
         {educationList.map((edu, index) => (
-          <div key={index}>
+          <div className="education-entry" key={index}>
             <h2>{edu.degree}</h2>
             <p>{edu.institution}</p>
             <p>{edu.period}</p>

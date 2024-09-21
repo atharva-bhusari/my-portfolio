@@ -2,7 +2,7 @@ import Layout from '../components/Layout';
 
 const Contact = () => (
   <Layout title="Contact">
-    <section>
+    <section className="content-section">
       <h1>Contact Me</h1>
       <p>
         Email:{' '}
@@ -18,7 +18,7 @@ const Contact = () => (
           linkedin.com/in/yourprofile
         </a>
       </p>
-     {/* <!-- Add more contact information as needed --> */}
+      {/* Add more contact methods if needed */}
     </section>
   </Layout>
 );

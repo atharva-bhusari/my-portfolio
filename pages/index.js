@@ -1,17 +1,16 @@
-import Layout from '../components/Layout';
 import Image from 'next/image';
-// import profilePic from '../public/my-photo.jpg';
-import { FaLinkedin, FaGithub } from 'react-icons/fa';
+import Layout from '../components/Layout';
+import { FaLinkedin, FaGithub, FaTwitter } from 'react-icons/fa';
 
 const Home = () => (
   <Layout title="Home">
-    <section className="home-section no-box">
+    <section className="home-section">
       <div className="profile-container">
         <Image
           src="/my-photo.jpg"
           alt="Your Name"
-          width={300}
-          height={300}
+          width={200}
+          height={200}
           unoptimized
           className="profile-photo"
         />
@@ -22,13 +21,21 @@ const Home = () => (
           predictive models that drive business value.
         </p>
         <div className="social-links">
-          <a href="https://www.linkedin.com/in/atharva-bhusari/" target="_blank" rel="noopener noreferrer">
-            <FaLinkedin size={24} />
+          <a
+            href="https://www.linkedin.com/in/yourprofile"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaLinkedin />
           </a>
-          <a href="https://github.com/atharva-bhusari" target="_blank" rel="noopener noreferrer">
-            <FaGithub size={24} />
+          <a
+            href="https://github.com/yourusername"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaGithub />
           </a>
-          {/* <!-- Add more social links if needed --> */}
+
         </div>
       </div>
     </section>

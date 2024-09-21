@@ -1,5 +1,3 @@
-// pages/publications.js
-
 import Layout from '../components/Layout';
 
 const Publications = () => {
@@ -15,7 +13,7 @@ const Publications = () => {
 
   return (
     <Layout title="Publications">
-      <section>
+      <section className="content-section">
         <h1>Publications</h1>
         {publications.map((pub, index) => (
           <div key={index}>
@@ -23,7 +21,12 @@ const Publications = () => {
             <p>
               {pub.journal}, {pub.year}
             </p>
-            <a href={pub.link} target="_blank" rel="noopener noreferrer">
+            <a
+              href={pub.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="publication-link"
+            >
               Read Publication
             </a>
           </div>

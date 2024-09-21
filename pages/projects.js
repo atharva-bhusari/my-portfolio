@@ -12,13 +12,18 @@ const Projects = () => {
 
   return (
     <Layout title="Projects">
-      <section>
+      <section className="content-section">
         <h1>Projects</h1>
         {projects.map((project, index) => (
           <div key={index}>
             <h2>{project.title}</h2>
             <p>{project.description}</p>
-            <a href={project.link} target="_blank" rel="noopener noreferrer">
+            <a
+              href={project.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="project-link"
+            >
               View on GitHub
             </a>
           </div>

@@ -13,11 +13,13 @@ const Experience = () => {
 
   return (
     <Layout title="Experience">
-      <section>
+      <section className="content-section">
         <h1>Experience</h1>
         {experiences.map((exp, index) => (
-          <div key={index}>
-            <h2>{exp.role} at {exp.company}</h2>
+          <div className="experience-entry" key={index}>
+            <h2>
+              {exp.role} at {exp.company}
+            </h2>
             <p>{exp.period}</p>
             <p>{exp.description}</p>
           </div>

@@ -13,11 +13,11 @@ const Skills = () => {
 
   return (
     <Layout title="Skills">
-      <section>
+      <section className="content-section">
         <h1>Skills</h1>
         <ul>
           {skillsList.map((skill, index) => (
-            <li key={index}>{skill}</li>
+            <li key={index}>• {skill}</li>
           ))}
         </ul>
       </section>
