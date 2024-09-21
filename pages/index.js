@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Layout from '../components/Layout';
-import { FaLinkedin, FaGithub, FaTwitter } from 'react-icons/fa';
+import { FaLinkedin, FaGithub } from 'react-icons/fa';
 
 const Home = () => (
   <Layout title="Home">
