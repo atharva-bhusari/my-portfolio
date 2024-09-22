@@ -1,4 +1,4 @@
-import Layout from '../components/Layout';
+import Head from 'next/head';
 
 const Publications = () => {
   const publications = [
@@ -12,7 +12,11 @@ const Publications = () => {
   ];
 
   return (
-    <Layout title="Publications">
+    <>
+      <Head>
+        <title>Publications - Your Name</title>
+        <meta name="description" content="Publications by Your Name" />
+      </Head>
       <section className="content-section">
         <h1>Publications</h1>
         {publications.map((pub, index) => (
@@ -32,7 +36,7 @@ const Publications = () => {
           </div>
         ))}
       </section>
-    </Layout>
+    </>
   );
 };
 

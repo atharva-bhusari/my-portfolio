@@ -1,4 +1,4 @@
-import Layout from '../components/Layout';
+import Head from 'next/head';
 
 const Education = () => {
   const educationList = [
@@ -12,7 +12,11 @@ const Education = () => {
   ];
 
   return (
-    <Layout title="Education">
+    <>
+      <Head>
+        <title>Education - Your Name</title>
+        <meta name="description" content="Educational background of Your Name" />
+      </Head>
       <section className="content-section">
         <h1>Education</h1>
         {educationList.map((edu, index) => (
@@ -24,7 +28,7 @@ const Education = () => {
           </div>
         ))}
       </section>
-    </Layout>
+    </>
   );
 };
 

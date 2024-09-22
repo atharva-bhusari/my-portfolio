@@ -1,4 +1,4 @@
-import Layout from '../components/Layout';
+import Head from 'next/head';
 
 const Skills = () => {
   const skillsList = [
@@ -12,7 +12,11 @@ const Skills = () => {
   ];
 
   return (
-    <Layout title="Skills">
+    <>
+      <Head>
+        <title>Skills - Atharva Harshavardhan Bhusari</title>
+        <meta name="description" content="Skills of Your Name, Data Scientist" />
+      </Head>
       <section className="content-section">
         <h1>Skills</h1>
         <ul>
@@ -21,7 +25,7 @@ const Skills = () => {
           ))}
         </ul>
       </section>
-    </Layout>
+    </>
   );
 };
 

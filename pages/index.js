@@ -1,9 +1,13 @@
+import Head from 'next/head';
 import Image from 'next/image';
-import Layout from '../components/Layout';
 import { FaLinkedin, FaGithub } from 'react-icons/fa';
 
 const Home = () => (
-  <Layout title="Home">
+  <>
+    <Head>
+      <title>Home - Your Name</title>
+      <meta name="description" content="Data Scientist Portfolio" />
+    </Head>
     <section className="home-section">
       <div className="profile-container">
         <Image
@@ -22,7 +26,7 @@ const Home = () => (
         </p>
         <div className="social-links">
           <a
-            href="https://www.linkedin.com/in/atharva-bhusari/"
+            href="https://www.linkedin.com/in/atharva-bhusari"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -35,11 +39,17 @@ const Home = () => (
           >
             <FaGithub />
           </a>
-
+          {/* <a
+            href="https://twitter.com/yourusername"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaTwitter />
+          </a> */}
         </div>
       </div>
     </section>
-  </Layout>
+  </>
 );
 
 export default Home;
