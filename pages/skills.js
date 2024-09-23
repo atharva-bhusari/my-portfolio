@@ -9,7 +9,8 @@ import {
   FaJava, 
   FaChartLine, 
   FaChartArea, 
-  FaAws 
+  FaAws,
+  FaNode 
 } from 'react-icons/fa';
 import { 
   SiCplusplus, 
@@ -30,7 +31,10 @@ import {
   SiPostgresql, 
   SiMicrosoftazure, 
   SiGooglecloud,
-  SiOracle 
+  SiOracle,
+  SiFlask,
+  SiDjango,
+  SiStreamlit 
 } from 'react-icons/si';
 
 const Skills = () => {
@@ -89,6 +93,15 @@ const Skills = () => {
         { name: 'AWS', icon: <FaAws /> },
         { name: 'Azure', icon: <SiMicrosoftazure /> },
         { name: 'Google Cloud', icon: <SiGooglecloud /> },
+      ],
+    },
+    {
+      category: 'Web Development Frameworks',
+      technologies: [
+        { name: 'Streamlit', icon: <SiStreamlit /> },
+        { name: 'Flask', icon: <SiFlask /> },
+        { name: 'Django', icon: <SiDjango /> },
+        { name: 'Node.js', icon: <FaNode /> },
       ],
     },
     // Add more categories and technologies as needed
